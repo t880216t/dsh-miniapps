@@ -1,7 +1,7 @@
 {
   "name": "dsh-miniapps",
   "version": "0.1.0",
-  "description": "Configurable mini-app tabs for the DeepSeek Harness workbench sidebar: each configured internal web app opens as a sandboxed embedded page",
+  "description": "User-configurable mini apps for DeepSeek Harness: a sidebar entry opening a full-screen surface that switches between configured internal web apps, with in-app list management",
   "type": "module",
   "license": "MIT",
   "main": "lib/index.js",
@@ -26,21 +26,17 @@
     },
     "client": {
       "inject": [
-        "dsh-better-sidebar"
+        "@deepseek-ai/dsh-client-runtime"
       ],
       "platform": "web"
     }
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": "*",
-    "dsh-better-sidebar": "*",
     "react": "^18.0.0"
   },
   "peerDependenciesMeta": {
     "@deepseek-ai/cordis": {
-      "optional": true
-    },
-    "dsh-better-sidebar": {
       "optional": true
     },
     "react": {
