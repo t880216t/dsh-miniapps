@@ -1,0 +1,12 @@
+# dsh-miniapps bundle patch: mounts the host half with the product's preset
+# mini-app list. Deployments extend or replace `apps` from a later profile
+# patch layer; each entry is { id, name, url, icon? } with a kebab-case id
+# and http(s) URLs.
+- insert:
+    - id: miniapps
+      name: 'dsh-miniapps'
+      config:
+        apps:
+          - id: mic-ai-agent
+            name: MIC AI代理
+            url: http://10.110.5.239:9098
