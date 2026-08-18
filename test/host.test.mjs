@@ -49,6 +49,7 @@ test('serves the validated app list as JSON and disposal removes the route', () 
   assert.match(headers['Content-Type'], /application\/json/)
   assert.deepEqual(JSON.parse(body), {
     apps: [{ id: 'mic-ai-agent', name: 'MIC AI代理', url: 'http://10.110.5.239:9098' }],
+    proxy: { mode: 'none', url: '', bypassRules: '' },
   })
 
   for (const dispose of disposers) dispose()
