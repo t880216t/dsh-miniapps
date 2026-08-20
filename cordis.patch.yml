@@ -7,6 +7,6 @@
       name: 'dsh-miniapps'
       config:
         apps:
-          - id: mic-ai-agent
-            name: MIC AI代理
-            url: http://10.110.5.239:9098
+          - id: tiangong
+            name: 天宫
+            url: https://xspace.vemic.com/kernel/
